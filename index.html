@@ -31,6 +31,12 @@ header p{font-size:.88rem;opacity:.85;margin:0}
 .starter-grid a{display:block;text-decoration:none;color:#1a4a8a;background:#f5f8ff;border:1px solid #dce6f7;border-radius:6px;padding:10px 12px;font-size:.9rem;line-height:1.45;transition:all .15s}
 .starter-grid a:hover{background:#1a4a8a;color:#fff;border-color:#1a4a8a}
 .starter-note{font-size:.82rem;color:#666;margin-top:10px}
+.first-read{background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #dde3f0}
+.first-read-title{font-weight:700;color:#1a4a8a;margin-bottom:10px;font-size:1rem}
+.first-read-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.first-read-list a{display:block;text-decoration:none;color:#1a4a8a;background:#fbfcff;border:1px solid #dce6f7;border-radius:6px;padding:12px 14px;font-size:.92rem;line-height:1.55}
+.first-read-list a span{display:block;color:#666;font-size:.78rem;margin-top:4px}
+.first-read-list a:hover{background:#f0f5ff}
 .result-count{font-size:.85rem;color:#888;margin-bottom:12px;padding-left:2px}
 .cat-section{margin-bottom:24px}
 .cat-title{font-size:1rem;font-weight:700;color:#1a4a8a;background:#eef2fb;border-radius:6px 6px 0 0;padding:8px 14px;display:flex;align-items:center;gap:8px}
@@ -77,8 +83,16 @@ footer a{color:#999}
 <div class="main">
   <div class="lead">理事になったばかりの方、初めて理事長を引き受けた方向けに、管理組合の実務でよくある疑問を解説します。全<strong>30記事</strong>・無料。</div>
   <div class="hero-image">
-    <img src="assets/hero-trust-condominium.png" alt="信頼感のあるマンション管理のイメージ" loading="eager" width="1600" height="720">
+    <img src="assets/hero-trust-condominium.jpg" alt="信頼感のあるマンション外観の実写イメージ" loading="eager" width="1600" height="720">
   </div>
+  <section class="first-read" aria-label="まず読む3記事">
+    <div class="first-read-title">まず読む3記事</div>
+    <div class="first-read-list">
+      <a href="docs/kanrikumiai-riji-saishoni.html">管理組合の理事になったら最初にやること<span>初回理事会までの流れを確認</span></a>
+      <a href="docs/kanrikumiai-richocho-yakuwari.html">管理組合の理事長の役割とは<span>抱え込まずに進める基本</span></a>
+      <a href="docs/kanrikumiai-sokai-hirakata.html">管理組合の総会の開き方<span>準備から当日進行までを整理</span></a>
+    </div>
+  </section>
   <section class="starter" aria-label="初めての人向け導線">
     <div class="starter-title">いま困っていることは？</div>
     <div class="starter-grid">
