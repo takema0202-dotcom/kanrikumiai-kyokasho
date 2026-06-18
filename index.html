@@ -23,6 +23,14 @@ header p{font-size:.88rem;opacity:.85;margin:0}
 .filter-btn:hover,.filter-btn.active{background:#1a4a8a;border-color:#1a4a8a;color:#fff}
 .main{max-width:860px;margin:0 auto;padding:20px 20px 60px}
 .lead{background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:20px;font-size:.93rem;color:#444;border-left:4px solid #1a4a8a;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.hero-image{margin:0 0 20px;border-radius:8px;overflow:hidden;border:1px solid #dde3f0;background:#edf6fb;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.hero-image img{display:block;width:100%;height:auto;aspect-ratio:20/9;object-fit:cover}
+.starter{background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #dde3f0}
+.starter-title{font-weight:700;color:#1a4a8a;margin-bottom:10px;font-size:1rem}
+.starter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.starter-grid a{display:block;text-decoration:none;color:#1a4a8a;background:#f5f8ff;border:1px solid #dce6f7;border-radius:6px;padding:10px 12px;font-size:.9rem;line-height:1.45;transition:all .15s}
+.starter-grid a:hover{background:#1a4a8a;color:#fff;border-color:#1a4a8a}
+.starter-note{font-size:.82rem;color:#666;margin-top:10px}
 .result-count{font-size:.85rem;color:#888;margin-bottom:12px;padding-left:2px}
 .cat-section{margin-bottom:24px}
 .cat-title{font-size:1rem;font-weight:700;color:#1a4a8a;background:#eef2fb;border-radius:6px 6px 0 0;padding:8px 14px;display:flex;align-items:center;gap:8px}
@@ -68,6 +76,23 @@ footer a{color:#999}
 
 <div class="main">
   <div class="lead">理事になったばかりの方、初めて理事長を引き受けた方向けに、管理組合の実務でよくある疑問を解説します。全<strong>30記事</strong>・無料。</div>
+  <div class="hero-image">
+    <img src="assets/hero-trust-condominium.png" alt="信頼感のあるマンション管理のイメージ" loading="eager" width="1600" height="720">
+  </div>
+  <section class="starter" aria-label="初めての人向け導線">
+    <div class="starter-title">いま困っていることは？</div>
+    <div class="starter-grid">
+      <a href="docs/kanrikumiai-riji-saishoni.html">理事になったばかり</a>
+      <a href="docs/kanrikumiai-richocho-yakuwari.html">理事長になった</a>
+      <a href="docs/kanrisha-henkou-tetsuzuki.html">管理会社に不満がある</a>
+      <a href="docs/kanrikumiai-sokai-hirakata.html">総会の準備をしたい</a>
+      <a href="docs/kanrikumiai-sokai-gijiroku.html">議事録の書き方を知りたい</a>
+      <a href="docs/shuzen-tsumitate-neage-setsumei.html">修繕積立金で悩んでいる</a>
+      <a href="docs/daikibo-shuzen-susumekata.html">大規模修繕を進めたい</a>
+      <a href="docs/mansion-soon-trouble-taiou.html">騒音・ペット等のトラブル</a>
+    </div>
+    <div class="starter-note">初めての方は、近い悩みから読むと全体像をつかみやすくなります。記事一覧や検索からも探せます。</div>
+  </section>
   <div class="result-count" id="resultCount"></div>
   <div id="articleContainer"></div>
   <div class="no-result" id="noResult" style="display:none">
