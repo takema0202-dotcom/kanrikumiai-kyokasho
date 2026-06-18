@@ -1,37 +1,213 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://kanrikumiai-kyokasho.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-riji-saishoni.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-richocho-yakuwari.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-henkou-tetsuzuki.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanri-itaku-minaoshi-check.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-sokai-hirakata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-sokai-gijiroku.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/rijijai-gijiroku-kakikata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/shuzen-tsumitate-neage-setsumei.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/daikibo-shuzen-susumekata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/mansion-soon-trouble-taiou.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-hikaku-mirubekikoumoku.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrihi-tsumitate-chigai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/choki-shuzenkeikaku-minaoshi-timing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/daikibo-shuzen-mitsumori-hikaku.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/sokai-gian-tsukurikata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-shorui-hokan.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-henkou-sokai-nagare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/rijijai-susumekata-gidai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/mansion-kujou-taiou-bunrei.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-trouble-kiroku.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/shiyosaisoku-minaoshi-hoho.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrihi-minaosu-hoho.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikiyaku-kaisei-tetsuzuki.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/mansion-taino-kanrikumiai-taiou.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-pet-trouble-taiou.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kubunshoyuho-wakariyasuku.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/shuzen-tsumitatekin-fusoku-taiou.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-jishukanri-hajimekata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-hojinka-merit.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/docs/mansion-chushajo-kanri-mondai.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/disclaimer.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-<url><loc>https://kanrikumiai-kyokasho.com/about.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-riji-saishoni.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-richocho-yakuwari.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-henkou-tetsuzuki.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanri-itaku-minaoshi-check.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-sokai-hirakata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-sokai-gijiroku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/rijijai-gijiroku-kakikata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/shuzen-tsumitate-neage-setsumei.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/daikibo-shuzen-susumekata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/mansion-soon-trouble-taiou.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-hikaku-mirubekikoumoku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrihi-tsumitate-chigai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/choki-shuzenkeikaku-minaoshi-timing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/daikibo-shuzen-mitsumori-hikaku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/sokai-gian-tsukurikata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-shorui-hokan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrisha-henkou-sokai-nagare.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/rijijai-susumekata-gidai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/mansion-kujou-taiou-bunrei.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-trouble-kiroku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/shiyosaisoku-minaoshi-hoho.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrihi-minaosu-hoho.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikiyaku-kaisei-tetsuzuki.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/mansion-taino-kanrikumiai-taiou.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-pet-trouble-taiou.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kubunshoyuho-wakariyasuku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/shuzen-tsumitatekin-fusoku-taiou.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-jishukanri-hajimekata.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/kanrikumiai-hojinka-merit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/mansion-chushajo-kanri-mondai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/disclaimer.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/about.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/31_kanrikumiai-riji-ninki-rule.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/32_kanrikumiai-riji-erabikata.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/33_kanrikumiai-ijo-sokai-hirakata.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/34_sokai-kessoku-suuchi.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/35_kanrihi-taino-taiou-flow.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/36_kanrisha-keiyaku-kaijo-houhou.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/37_daikibo-shuzen-iinkai-tsukurikata.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/38_mansyon-kaihen-hantai-taiou.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/39_kanrikumiai-kaikei-kihon.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://kanrikumiai-kyokasho.com/docs/40_kanrikumiai-hoken-minaoshi.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
 </urlset>
