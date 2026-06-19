@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>管理組合の教科書｜マンション管理組合の実務情報サイト</title>
-<meta name="description" content="管理組合の理事・理事長向けに、理事会運営・総会・管理会社変更・大規模修繕など実務でよくある疑問を解説します。全70記事・無料。">
+<meta name="description" content="管理組合の理事・理事長向けに、理事会運営・総会・管理会社変更・大規模修繕など実務でよくある疑問を解説します。全80記事・無料。">
 <link rel="canonical" href="https://kanrikumiai-kyokasho.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="管理組合の教科書">
@@ -31,6 +31,10 @@ header p{font-size:.88rem;opacity:.85;margin:0}
 .filter-btn:hover,.filter-btn.active{background:#1a4a8a;border-color:#1a4a8a;color:#fff}
 .main{max-width:860px;margin:0 auto;padding:20px 20px 60px}
 .lead{background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:20px;font-size:.93rem;color:#444;border-left:4px solid #1a4a8a;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.law-note{background:#fff;border:1px solid #d6e2f2;border-left:4px solid #1a4a8a;border-radius:8px;padding:14px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.law-note-title{font-weight:700;color:#1a4a8a;font-size:.95rem;margin-bottom:4px}
+.law-note p{font-size:.86rem;color:#444;margin:0}
+.law-note small{display:block;color:#777;font-size:.78rem;margin-top:6px;line-height:1.7}
 .hero-image{margin:0 0 20px;border-radius:8px;overflow:hidden;border:1px solid #dde3f0;background:#edf6fb;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .hero-image img{display:block;width:100%;height:auto;aspect-ratio:20/9;object-fit:cover}
 .starter{background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #dde3f0}
@@ -95,6 +99,11 @@ footer a{color:#999}
 
 <div class="main">
   <div class="lead">理事になったばかりの方、初めて理事長を引き受けた方向けに、管理組合の実務でよくある疑問を解説します。全<strong id="articleCount"></strong>記事・無料。</div>
+  <section class="law-note" aria-label="法令と標準管理規約の確認方針">
+    <div class="law-note-title">現行法令・標準管理規約を確認して作成しています</div>
+    <p>本サイトの記事は、現行の区分所有法と、国土交通省「マンション標準管理規約」（令和7年10月17日最終改正）を確認しながら、管理組合の実務情報として整理しています。</p>
+    <small>個別の判断は、各マンションの管理規約・使用細則・総会決議の内容により異なります。重要な判断では、管理会社、マンション管理士、弁護士等への確認も選択肢です。</small>
+  </section>
   <div class="hero-image">
     <img src="assets/hero-trust-condominium.jpg" alt="信頼感のあるマンション外観の実写イメージ" loading="eager" width="1600" height="720">
   </div>
@@ -158,7 +167,7 @@ const ARTICLES = [
   {slug:"kanrihi-minaosu-hoho",title:"管理費の見直し方法｜管理組合が確認したい実務ポイント",cat:"管理会社"},
   {slug:"kanrikumiai-jishukanri-hajimekata",title:"管理組合の自主管理の始め方｜メリット・デメリットと手順",cat:"管理会社"},
   {slug:"kanrikumiai-sokai-hirakata",title:"管理組合総会の開き方を初心者向けに解説｜準備から当日進行まで",cat:"総会・議事録"},
-  {slug:"kanrikumiai-sokai-gijiroku",title:"管理組合総会の議事録の書き方｜残すべき項目と作成手順",cat:"総会・議事録"},
+  {slug:"kanrikumiai-sokai-gijiroku",title:"管理組合総会の議事録の書き方｜残したい項目と作成手順",cat:"総会・議事録"},
   {slug:"rijijai-gijiroku-kakikata",title:"マンション理事会議事録の書き方｜次回に困らない記録の残し方",cat:"総会・議事録"},
   {slug:"sokai-gian-tsukurikata",title:"総会議案の作り方｜理事会で決めた内容を分かりやすく伝える基本",cat:"総会・議事録"},
   {slug:"shuzen-tsumitate-neage-setsumei",title:"修繕積立金の値上げを説明する方法｜理事会が準備する資料と伝え方",cat:"管理費・積立金"},
@@ -171,7 +180,7 @@ const ARTICLES = [
   {slug:"mansion-kujou-taiou-bunrei",title:"マンション苦情対応の文例｜管理組合が使いやすい伝え方",cat:"トラブル"},
   {slug:"kanrikumiai-trouble-kiroku",title:"管理組合のトラブル記録方法｜あとで困らないための残し方",cat:"トラブル"},
   {slug:"kanrikumiai-pet-trouble-taiou",title:"管理組合のペットトラブル対応｜理事会が取るべき初動と流れ",cat:"トラブル"},
-  {slug:"mansion-chushajo-kanri-mondai",title:"マンション駐車場の管理問題｜管理組合が対処すべきポイント",cat:"トラブル"},
+  {slug:"mansion-chushajo-kanri-mondai",title:"マンション駐車場の管理問題｜管理組合が確認したいポイント",cat:"トラブル"},
   {slug:"mansion-taino-kanrikumiai-taiou",title:"マンション管理費の滞納に管理組合はどう対応するか",cat:"トラブル"},
   {slug:"kanrikiyaku-kaisei-tetsuzuki",title:"管理規約の改正手順｜管理組合が進める流れと注意点",cat:"規約・法律"},
   {slug:"shiyosaisoku-minaoshi-hoho",title:"使用細則の見直し方法｜管理組合が確認したい実務ポイント",cat:"規約・法律"},
