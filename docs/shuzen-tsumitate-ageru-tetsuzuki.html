@@ -21,7 +21,35 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid #ddd;font-size:.8
 .related ul{margin:.4rem 0 0;padding-left:1.4em}
 .related li{margin:.3em 0;font-size:.9rem}
 .pr-box{background:#fff9f0;border:1px solid #f0d8a0;border-radius:8px;padding:14px 20px;margin:2rem 0;font-size:.88rem}</style>
-</head>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"管理組合の教科書","url":"https://kanrikumiai-kyokasho.com","description":"マンション管理組合の理事・理事長・区分所有者向け実務情報サイト。管理業務主任者・実務25年以上の知識をもとに作成。"}
+</script>
+<script>
+(function(){
+  var h2s = document.querySelectorAll('h2');
+  var faqH2 = null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
+</script></head>
 <body>
 <header><a href="../index.html">管理組合の教科書</a></header>
 <h1>修繕積立金を値上げするときの手順｜住民説明で整理するポイント</h1>

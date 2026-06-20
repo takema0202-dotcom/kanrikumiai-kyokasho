@@ -19,7 +19,35 @@ p{margin:.7em 0} ul,ol{padding-left:1.5em;margin:.5em 0} li{margin:.3em 0}
 .related{padding:16px 20px;background:#f8f8f8;border-radius:6px;margin:1.5rem 0}.related ul{margin:.5rem 0 0;padding-left:1.2em}
 .pr-box{padding:18px 22px;background:#fff3f3;border:2px solid #c0392b;border-radius:8px;margin-top:2rem;font-size:.95rem}.pr-box p:first-child{font-size:.8rem;color:#c0392b;margin-bottom:.5rem;font-weight:700}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #ddd;font-size:.8rem;color:#999;text-align:center} footer a{color:#999}</style><meta name="article-category" content="管理費・積立金">
-</head><body>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"管理組合の教科書","url":"https://kanrikumiai-kyokasho.com","description":"マンション管理組合の理事・理事長・区分所有者向け実務情報サイト。管理業務主任者・実務25年以上の知識をもとに作成。"}
+</script>
+<script>
+(function(){
+  var h2s = document.querySelectorAll('h2');
+  var faqH2 = null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
+</script></head><body>
 <header><a href="../index.html">管理組合の教科書</a></header>
 <h1>管理費の値上げを総会で説明する方法</h1>
 <div class="intro"><p>管理費の値上げは、理事会にとって説明しにくい議案の一つです。毎月の負担が増えるため、理由があいまいなまま総会に出すと、組合員の不安や反発が強くなりやすいです。</p></div>
