@@ -68,6 +68,20 @@ header p{font-size:.88rem;opacity:.85;margin:0}
 .no-result-icon{font-size:2.5rem;margin-bottom:8px}
 footer{text-align:center;padding:20px;font-size:.8rem;color:#999;border-top:1px solid #dde3f0;background:#fff}
 footer a{color:#999}
+
+.route-panel{background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #dde3f0}
+.route-title{font-weight:700;color:#1a4a8a;margin-bottom:10px;font-size:1rem}
+.route-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.route-card{display:block;text-decoration:none;color:#1a4a8a;background:#fbfcff;border:1px solid #dce6f7;border-radius:6px;padding:12px 14px;font-size:.9rem;line-height:1.55}
+.route-card strong{display:block;color:#1a4a8a;margin-bottom:4px}
+.route-card span{display:block;color:#666;font-size:.78rem}
+.route-card:hover{background:#f0f5ff}
+.calendar-table{width:100%;border-collapse:collapse;background:#fff;font-size:.88rem}
+.calendar-table th,.calendar-table td{border:1px solid #dde3f0;padding:9px 10px;vertical-align:top}
+.calendar-table th{background:#eef2fb;color:#1a4a8a;text-align:left}
+.calendar-table a{color:#1a4a8a;font-weight:700;text-decoration:none}
+.free-paid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:10px}
+.free-paid div{background:#f8fbff;border:1px solid #e2e9f6;border-radius:6px;padding:10px 12px;font-size:.88rem}
 @media(max-width:600px){header h1{font-size:1.3rem}.filter-btn{font-size:.8rem;padding:5px 10px}.article-list a{font-size:.88rem}}
 </style>
 </head>
@@ -92,6 +106,7 @@ footer a{color:#999}
     <button class="filter-btn" data-cat="総会・議事録">📝 総会・議事録</button>
     <button class="filter-btn" data-cat="管理費・積立金">💰 管理費・積立金</button>
     <button class="filter-btn" data-cat="大規模修繕">🔨 大規模修繕</button>
+    <button class="filter-btn" data-cat="設備・修繕">🛠️ 設備・修繕</button>
     <button class="filter-btn" data-cat="トラブル">⚠️ トラブル</button>
     <button class="filter-btn" data-cat="規約・法律">⚖️ 規約・法律</button>
   </div>
@@ -123,6 +138,41 @@ footer a{color:#999}
     </div>
     <div class="site-scope-note">個別の法律判断ではなく、管理組合の理事会で確認しやすい実務情報として整理しています。</div>
   </section>
+
+  <section class="route-panel" aria-label="読者タイプ別の入口">
+    <div class="route-title">あなたの状況から探す</div>
+    <div class="route-grid">
+      <a class="route-card" href="docs/kanrikumiai-riji-saishoni.html"><strong>初めて理事になった</strong><span>理事の基本、初回理事会、引き継ぎを確認</span></a>
+      <a class="route-card" href="docs/kanrikumiai-richocho-yakuwari.html"><strong>理事長になった</strong><span>年間運営、総会準備、抱え込まない進め方</span></a>
+      <a class="route-card" href="docs/kanrisha-henkou-tetsuzuki.html"><strong>管理会社に不満がある</strong><span>比較、委託契約、変更手順を整理</span></a>
+      <a class="route-card" href="docs/shuzen-tsumitate-neage-setsumei.html"><strong>修繕積立金で困っている</strong><span>不足、値上げ、説明資料の考え方</span></a>
+      <a class="route-card" href="docs/daikibo-shuzen-susumekata.html"><strong>大規模修繕を進めたい</strong><span>委員会、見積比較、事前調査の流れ</span></a>
+      <a class="route-card" href="docs/kanrikumiai-trouble-kiroku.html"><strong>住民トラブル対応中</strong><span>記録、通知、理事会判断の進め方</span></a>
+    </div>
+  </section>
+
+  <section class="route-panel" aria-label="管理組合の年間実務カレンダー">
+    <div class="route-title">管理組合の年間実務カレンダー</div>
+    <table class="calendar-table">
+      <thead><tr><th>時期</th><th>主な実務</th><th>読む記事・使うマニュアル</th></tr></thead>
+      <tbody>
+        <tr><td>4〜6月</td><td>通常総会の準備、議案整理、議事録作成</td><td><a href="docs/kanrikumiai-sokai-hirakata.html">総会の開き方</a> / P1 通常総会マニュアル</td></tr>
+        <tr><td>6〜7月</td><td>新旧理事の引き継ぎ、年間予定の確認</td><td><a href="docs/kanrikumiai-riji-saishoni.html">理事になったら最初にやること</a> / P2 理事会運営</td></tr>
+        <tr><td>通年</td><td>管理費滞納、騒音・ペット・無断駐車などの対応</td><td><a href="docs/mansion-taino-kanrikumiai-taiou.html">滞納対応</a> / P3・P7</td></tr>
+        <tr><td>修繕期</td><td>長期修繕計画、積立金、業者選定、大規模修繕</td><td><a href="docs/daikibo-shuzen-susumekata.html">大規模修繕の進め方</a> / P4・P5</td></tr>
+        <tr><td>随時</td><td>管理会社の比較、委託契約見直し、変更検討</td><td><a href="docs/kanrisha-henkou-tetsuzuki.html">管理会社変更の手順</a> / P6</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="route-panel" aria-label="無料記事と有料マニュアルの違い">
+    <div class="route-title">無料記事と有料マニュアルの違い</div>
+    <div class="free-paid">
+      <div><strong>無料記事</strong><br>全体像、確認ポイント、理事会で話し合う前の整理に使えます。</div>
+      <div><strong>有料マニュアル</strong><br>Word書式、チェックリスト、進行手順をまとめて使いたい方向けです。</div>
+    </div>
+    <p class="site-scope-note">有料テンプレートは、姉妹サイト「実務文例ライブラリ」のnoteアカウントで販売しています。</p>
+  </section>
   <section class="first-read" aria-label="まず読む3記事">
     <div class="first-read-title">まず読む3記事</div>
     <div class="first-read-list">
@@ -147,7 +197,7 @@ footer a{color:#999}
   </section>
   <div style="background:#f5f0ff;border:2px solid #7c5cbf;border-radius:8px;padding:18px 22px;margin:0 0 20px;font-size:.92rem;line-height:1.8">
     <p style="font-weight:700;color:#5a3fa0;margin:0 0 6px;font-size:1rem">📦 書式・テンプレートをすぐ使いたい方へ</p>
-    <p style="margin:0 0 10px;color:#444">理事会・総会・滞納対応・大規模修繕など場面別のWord書式・チェックリストをnoteで販売しています。</p>
+    <p style="margin:0 0 10px;color:#444">無料記事で概要を確認し、理事会でそのまま使う書式・チェックリストが必要な場合は有料マニュアルをご利用ください。販売は姉妹サイト「実務文例ライブラリ」のnoteアカウントで行っています。</p>
     <ul style="margin:0 0 12px;padding-left:1.4em;color:#333;line-height:2">
       <li><a href="https://note.com/jitsumubunrei/n/n50d22c335b1a" target="_blank" rel="noopener" style="color:#5a3fa0">P1 通常総会 完全運営マニュアル（¥2,000）</a></li>
       <li><a href="https://note.com/jitsumubunrei/n/nede5e22be015" target="_blank" rel="noopener" style="color:#5a3fa0">P2 理事会 年間運営＋引き継ぎマニュアル（¥1,000）</a></li>
@@ -281,7 +331,7 @@ const ARTICLES = [
 
 const CAT_ICONS = {
   "理事・基本":"📋","管理会社":"🏢","総会・議事録":"📝",
-  "管理費・積立金":"💰","大規模修繕":"🔨","トラブル":"⚠️","規約・法律":"⚖️"
+  "管理費・積立金":"💰","大規模修繕":"🔨","設備・修繕":"🛠️","トラブル":"⚠️","規約・法律":"⚖️"
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -334,7 +384,7 @@ function render() {
   });
 
   // カテゴリ順序を固定
-  const catOrder = ["理事・基本","管理会社","総会・議事録","管理費・積立金","大規模修繕","トラブル","規約・法律"];
+  const catOrder = ["理事・基本","管理会社","総会・議事録","管理費・積立金","大規模修繕","設備・修繕","トラブル","規約・法律"];
   const orderedCats = currentCat === 'all'
     ? catOrder.filter(c => cats[c])
     : [currentCat];
