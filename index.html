@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -76,6 +76,14 @@ footer a{color:#999}
 .route-card strong{display:block;color:#1a4a8a;margin-bottom:4px}
 .route-card span{display:block;color:#666;font-size:.78rem}
 .route-card:hover{background:#f0f5ff}
+.priority-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.priority-list a{display:block;text-decoration:none;color:#1a4a8a;background:#fbfcff;border:1px solid #dce6f7;border-radius:6px;padding:12px 14px;font-size:.9rem;line-height:1.55}
+.priority-list a strong{display:block;color:#1a4a8a;margin-bottom:4px}
+.priority-list a span{display:block;color:#666;font-size:.78rem}
+.priority-list a:hover{background:#f0f5ff}
+.manual-sample{background:#fff;border:1px solid #dde3f0;border-radius:8px;padding:14px 18px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.manual-sample-title{font-weight:700;color:#1a4a8a;margin-bottom:8px;font-size:.95rem}
+.manual-sample ul{margin:8px 0 0 1.2em;padding:0;font-size:.88rem;line-height:1.8;color:#444}
 .calendar-table{width:100%;border-collapse:collapse;background:#fff;font-size:.88rem}
 .calendar-table th,.calendar-table td{border:1px solid #dde3f0;padding:9px 10px;vertical-align:top}
 .calendar-table th{background:#eef2fb;color:#1a4a8a;text-align:left}
@@ -151,6 +159,23 @@ footer a{color:#999}
     </div>
   </section>
 
+  <section class="route-panel" aria-label="理事になったら最初に読む10本">
+    <div class="route-title">理事になったら最初に読む10本</div>
+    <div class="priority-list">
+      <a href="docs/kanrikumiai-riji-saishoni.html"><strong>1. 理事になったら最初にやること</strong><span>最初の確認事項と全体像</span></a>
+      <a href="docs/45_kanrikumiai-riji-gimu.html"><strong>2. 理事の義務と責任</strong><span>役割を抱え込みすぎないための基本</span></a>
+      <a href="docs/kanrikumiai-richocho-yakuwari.html"><strong>3. 理事長の役割</strong><span>理事長になった場合の進め方</span></a>
+      <a href="docs/kanrikumiai-sokai-hirakata.html"><strong>4. 総会の開き方</strong><span>準備から当日の流れまで</span></a>
+      <a href="docs/kanrikumiai-sokai-gijiroku.html"><strong>5. 総会議事録の作り方</strong><span>決議内容を記録する基本</span></a>
+      <a href="docs/kanrisha-henkou-tetsuzuki.html"><strong>6. 管理会社との付き合い方</strong><span>変更・見直し前に確認すること</span></a>
+      <a href="docs/shuzen-tsumitate-neage-setsumei.html"><strong>7. 修繕積立金の説明</strong><span>不足・値上げを整理する視点</span></a>
+      <a href="docs/mansion-taino-kanrikumiai-taiou.html"><strong>8. 管理費滞納への対応</strong><span>感情的にしないための記録と手順</span></a>
+      <a href="docs/daikibo-shuzen-susumekata.html"><strong>9. 大規模修繕の進め方</strong><span>委員会・見積・調査の流れ</span></a>
+      <a href="docs/kanrikumiai-trouble-kiroku.html"><strong>10. トラブル対応の記録</strong><span>理事会で判断しやすく残す方法</span></a>
+    </div>
+    <div class="starter-note">初めての理事・役員は、この10本を上から読むと管理組合実務の全体像をつかみやすくなります。</div>
+  </section>
+
   <section class="route-panel" aria-label="管理組合の年間実務カレンダー">
     <div class="route-title">管理組合の年間実務カレンダー</div>
     <table class="calendar-table">
@@ -168,11 +193,21 @@ footer a{color:#999}
   <section class="route-panel" aria-label="無料記事と有料マニュアルの違い">
     <div class="route-title">無料記事と有料マニュアルの違い</div>
     <div class="free-paid">
-      <div><strong>無料記事</strong><br>全体像、確認ポイント、理事会で話し合う前の整理に使えます。</div>
-      <div><strong>有料マニュアル</strong><br>Word書式、チェックリスト、進行手順をまとめて使いたい方向けです。</div>
+      <div><strong>無料記事</strong><br>全体像、確認ポイント、理事会で話し合う前の整理に使えます。まず状況を把握したい方向けです。</div>
+      <div><strong>有料マニュアル</strong><br>Word書式、チェックリスト、進行手順、理事会で使う文面をまとめて使いたい方向けです。</div>
     </div>
     <p class="site-scope-note">有料テンプレートは、姉妹サイト「実務文例ライブラリ」のnoteアカウントで販売しています。</p>
   </section>
+  <section class="manual-sample" aria-label="有料マニュアルの中身サンプル">
+    <div class="manual-sample-title">有料マニュアルの中身イメージ</div>
+    <p style="font-size:.88rem;line-height:1.7;color:#444;margin:0;">無料記事では概要と確認ポイントを整理しています。有料マニュアルでは、理事会で使いやすいWord書式やチェックリストを、実務の順番にまとめています。</p>
+    <ul>
+      <li>理事会・総会で使う確認チェックリスト</li>
+      <li>案内文・通知文・議事録などのWord文書</li>
+      <li>上から順に進められる実務手順</li>
+    </ul>
+  </section>
+
   <section class="first-read" aria-label="まず読む3記事">
     <div class="first-read-title">まず読む3記事</div>
     <div class="first-read-list">
