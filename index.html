@@ -105,6 +105,7 @@ footer a{color:#999}
     <button class="search-clear" id="clearBtn" title="クリア" style="display:none">✕</button>
   </div>
 </div>
+<div id="category-index" style="max-width:960px;margin:20px auto 0;padding:0 20px;"></div>
 
 <div class="filter-wrap">
   <div class="filter-btns" id="filterBtns">
@@ -257,6 +258,7 @@ footer a{color:#999}
 
 <footer>
   <p><a href="about.html">運営者情報</a> ｜ <a href="privacy.html">プライバシーポリシー</a> ｜ <a href="disclaimer.html">免責事項</a></p>
+  <p style="margin-top:4px;font-size:.8rem;">姉妹サイト: <a href="https://jitsumu-bunrei.com/" target="_blank" rel="noopener" style="color:#999;">実務文例ライブラリ</a>（ビジネス文例・テンプレート無料公開）</p>
   <p style="margin-top:6px">© 管理組合の教科書</p>
 </footer>
 
@@ -372,6 +374,21 @@ const CAT_ICONS = {
 document.addEventListener('DOMContentLoaded', function() {
   const countEl = document.getElementById('articleCount');
   if (countEl) countEl.textContent = ARTICLES.length;
+
+
+  const categoryIndex = document.getElementById('category-index');
+  if (categoryIndex) {
+    const cats = {};
+    ARTICLES.forEach(a => {
+      const cat = a.cat || 'その他';
+      if (!cats[cat]) cats[cat] = [];
+      cats[cat].push(a);
+    });
+    categoryIndex.innerHTML = Object.keys(cats).map(cat => {
+      const links = cats[cat].map(a => `<li><a href="docs/${a.slug}.html" style="display:block;padding:6px 4px;color:#1a4a8a;text-decoration:none;font-size:.88rem;border-bottom:1px solid #e8eaf0;line-height:1.5;">${a.title}</a></li>`).join('');
+      return `<section style="margin-bottom:20px;"><h2 style="font-size:1rem;font-weight:700;color:#1a4a8a;border-left:4px solid #1a4a8a;padding-left:10px;margin:0 0 10px;">${cat}</h2><ul style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 16px;">${links}</ul></section>`;
+    }).join('');
+  }
 
   const catCount = {};
   ARTICLES.forEach(a => { catCount[a.cat] = (catCount[a.cat] || 0) + 1; });
