@@ -467,6 +467,8 @@ function render() {
 searchBox.addEventListener('input', e => {
   currentQuery = e.target.value;
   clearBtn.style.display = currentQuery ? 'block' : 'none';
+  const categoryIndex = document.getElementById('category-index');
+  if (categoryIndex) categoryIndex.style.display = currentQuery ? 'none' : 'block';
   render();
 });
 
@@ -474,6 +476,8 @@ clearBtn.addEventListener('click', () => {
   searchBox.value = '';
   currentQuery = '';
   clearBtn.style.display = 'none';
+  const categoryIndex = document.getElementById('category-index');
+  if (categoryIndex) categoryIndex.style.display = 'block';
   searchBox.focus();
   render();
 });
