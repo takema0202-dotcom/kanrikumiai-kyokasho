@@ -357,12 +357,18 @@ function render() {
     : `全${total}記事`;
 }
 
+function scrollToResults() {
+  const main = document.querySelector('.main');
+  if (main) main.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
 searchBox.addEventListener('input', e => {
   currentQuery = e.target.value;
   clearBtn.style.display = currentQuery ? 'block' : 'none';
   const categoryIndex = document.getElementById('category-index');
   if (categoryIndex) categoryIndex.style.display = currentQuery ? 'none' : 'block';
   render();
+  if (currentQuery) scrollToResults();
 });
 
 clearBtn.addEventListener('click', () => {
@@ -381,6 +387,7 @@ filterBtns.forEach(btn => {
     btn.classList.add('active');
     currentCat = btn.dataset.cat;
     render();
+    scrollToResults();
   });
 });
 
