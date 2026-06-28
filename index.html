@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XZ3EYWBKP"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4XZ3EYWBKP');</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>管理組合の教科書｜マンション管理組合の実務情報サイト</title>
 <meta name="description" content="管理組合の理事・理事長向けに、理事会運営・総会・管理会社変更・大規模修繕など実務でよくある疑問を解説します。全120記事・無料。">
@@ -125,10 +127,10 @@ footer a{color:#999}
     <div class="route-grid">
       <a class="route-card" href="docs/kanrikumiai-riji-saishoni.html"><strong>初めて理事になった</strong><span>理事の基本、初回理事会、引き継ぎを確認</span></a>
       <a class="route-card" href="docs/kanrikumiai-richocho-yakuwari.html"><strong>理事長になった</strong><span>年間運営、総会準備、抱え込まない進め方</span></a>
-      <a class="route-card" href="docs/kanrisha-henkou-tetsuzuki.html"><strong>管理会社に不満がある</strong><span>比較、委託契約、変更手順を整理</span></a>
+      <a class="route-card" href="docs/kanrisha-hiyou-souba-naiwa.html"><strong>管理会社に不満がある</strong><span>比較、委託契約、変更手順を整理</span></a>
       <a class="route-card" href="docs/shuzen-tsumitate-neage-setsumei.html"><strong>修繕積立金で困っている</strong><span>不足、値上げ、説明資料の考え方</span></a>
       <a class="route-card" href="docs/daikibo-shuzen-susumekata.html"><strong>大規模修繕を進めたい</strong><span>委員会、見積比較、事前調査の流れ</span></a>
-      <a class="route-card" href="docs/kanrikumiai-trouble-kiroku.html"><strong>住民トラブル対応中</strong><span>記録、通知、理事会判断の進め方</span></a>
+      <a class="route-card" href="docs/kanrikumiai-line-sns-renkaku.html"><strong>住民トラブル対応中</strong><span>記録、通知、理事会判断の進め方</span></a>
     </div>
   </section>
 
@@ -138,6 +140,7 @@ footer a{color:#999}
     <p style="margin:0"><a href="https://note.com/jitsumubunrei/n/nf84c0ccbe3b7" target="_blank" rel="noopener" style="color:#5a3fa0;font-weight:700">実務パック 全10冊セット（¥9,800・30%OFF）を見る</a></p>
   </div>
 
+  <p style="font-size:.82rem;color:#666;margin:-6px 0 12px;line-height:1.7">トップページでは、検索対象として公開している主要記事のみを表示しています。品質調整中の記事は、確認後に追加します。</p>
   <div class="result-count" id="resultCount"></div>
   <div id="articleContainer"></div>
   <div class="no-result" id="noResult" style="display:none">
@@ -168,104 +171,8 @@ footer a{color:#999}
 const ARTICLES = [
   {slug:"kanrikumiai-riji-saishoni",title:"管理組合の理事になったら最初にやること｜初回理事会までの実務チェックリスト",cat:"理事・基本"},
   {slug:"kanrikumiai-richocho-yakuwari",title:"管理組合の理事長の役割を初心者向けに解説｜抱え込まない進め方",cat:"理事・基本"},
-  {slug:"kanrikumiai-shorui-hokan",title:"管理組合の書類保管方法｜理事交代で困らないための整理術",cat:"理事・基本"},
-  {slug:"rijijai-susumekata-gidai",title:"理事会の進め方と議題整理｜短時間で話し合いを終えるための基本",cat:"理事・基本"},
-  {slug:"kanrisha-henkou-tetsuzuki",title:"マンション管理会社の変更手順｜理事会が最初に確認する流れ",cat:"管理会社"},
-  {slug:"kanri-itaku-minaoshi-check",title:"管理委託契約の見直しチェックリスト｜管理会社任せにしない確認ポイント",cat:"管理会社"},
-  {slug:"kanrisha-hikaku-mirubekikoumoku",title:"管理会社を比較するときに見るべき項目｜理事会で確認したい基本ポイント",cat:"管理会社"},
-  {slug:"kanrisha-henkou-sokai-nagare",title:"管理会社変更の総会の流れ｜理事会が準備する資料と進め方",cat:"管理会社"},
-  {slug:"kanrihi-minaosu-hoho",title:"管理費の見直し方法｜管理組合が確認したい実務ポイント",cat:"管理会社"},
-  {slug:"kanrikumiai-jishukanri-hajimekata",title:"管理組合の自主管理の始め方｜メリット・デメリットと手順",cat:"管理会社"},
-  {slug:"kanrikumiai-sokai-hirakata",title:"管理組合総会の開き方を初心者向けに解説｜準備から当日進行まで",cat:"総会・議事録"},
-  {slug:"kanrikumiai-sokai-gijiroku",title:"管理組合総会の議事録の書き方｜残したい項目と作成手順",cat:"総会・議事録"},
-  {slug:"rijijai-gijiroku-kakikata",title:"マンション理事会議事録の書き方｜次回に困らない記録の残し方",cat:"総会・議事録"},
-  {slug:"sokai-gian-tsukurikata",title:"総会議案の作り方｜理事会で決めた内容を分かりやすく伝える基本",cat:"総会・議事録"},
   {slug:"shuzen-tsumitate-neage-setsumei",title:"修繕積立金の値上げを説明する方法｜理事会が準備する資料と伝え方",cat:"管理費・積立金"},
-  {slug:"kanrihi-tsumitate-chigai",title:"管理費と修繕積立金の違い｜理事になったら最初に押さえる会計の基本",cat:"管理費・積立金"},
-  {slug:"shuzen-tsumitatekin-fusoku-taiou",title:"修繕積立金が不足するときの対策と値上げの進め方",cat:"管理費・積立金"},
   {slug:"daikibo-shuzen-susumekata",title:"大規模修繕の進め方｜管理組合が最初に押さえる全体手順",cat:"大規模修繕"},
-  {slug:"choki-shuzenkeikaku-minaoshi-timing",title:"長期修繕計画を見直すタイミング｜管理組合が確認したい判断材料",cat:"大規模修繕"},
-  {slug:"daikibo-shuzen-mitsumori-hikaku",title:"大規模修繕の見積もり比較ポイント｜金額だけで判断しないための見方",cat:"大規模修繕"},
-  {slug:"mansion-soon-trouble-taiou",title:"マンション騒音トラブルで管理組合ができる対応｜理事会の進め方",cat:"トラブル"},
-  {slug:"mansion-kujou-taiou-bunrei",title:"マンション苦情対応の文例｜管理組合が使いやすい伝え方",cat:"トラブル"},
-  {slug:"kanrikumiai-trouble-kiroku",title:"管理組合のトラブル記録方法｜あとで困らないための残し方",cat:"トラブル"},
-  {slug:"kanrikumiai-pet-trouble-taiou",title:"管理組合のペットトラブル対応｜理事会が取るべき初動と流れ",cat:"トラブル"},
-  {slug:"mansion-chushajo-kanri-mondai",title:"マンション駐車場の管理問題｜管理組合が確認したいポイント",cat:"トラブル"},
-  {slug:"mansion-taino-kanrikumiai-taiou",title:"マンション管理費の滞納に管理組合はどう対応するか",cat:"トラブル"},
-  {slug:"kanrikiyaku-kaisei-tetsuzuki",title:"管理規約の改正手順｜管理組合が進める流れと注意点",cat:"規約・法律"},
-  {slug:"shiyosaisoku-minaoshi-hoho",title:"使用細則の見直し方法｜管理組合が確認したい実務ポイント",cat:"規約・法律"},
-  {slug:"kubunshoyuho-wakariyasuku",title:"区分所有法をわかりやすく解説｜管理組合が知るべき基本",cat:"規約・法律"},
-  {slug:"kanrikumiai-hojinka-merit",title:"管理組合の法人化のメリットと手続きの基本",cat:"規約・法律"},
-  {slug:"31_kanrikumiai-riji-ninki-rule",title:"管理組合の理事の任期ルールを決めるときの考え方",cat:"理事・基本"},
-  {slug:"32_kanrikumiai-riji-erabikata",title:"管理組合の理事の選び方で確認したい基本ポイント",cat:"理事・基本"},
-  {slug:"33_kanrikumiai-ijo-sokai-hirakata",title:"管理組合の臨時総会の開き方と準備の流れ",cat:"総会・議事録"},
-  {slug:"34_sokai-kessoku-suuchi",title:"総会の決議と定足数で確認したい数字の見方",cat:"総会・議事録"},
-  {slug:"35_kanrihi-taino-taiou-flow",title:"管理費滞納への対応フローを理事会で整理する方法",cat:"管理費・積立金"},
-  {slug:"36_kanrisha-keiyaku-kaijo-houhou",title:"管理会社との契約解除を検討するときの進め方",cat:"管理会社"},
-  {slug:"37_daikibo-shuzen-iinkai-tsukurikata",title:"大規模修繕委員会の作り方と理事会との役割分担",cat:"大規模修繕"},
-  {slug:"38_mansyon-kaihen-hantai-taiou",title:"マンションの改変に反対が出たときの管理組合の対応",cat:"規約・法律"},
-  {slug:"39_kanrikumiai-kaikei-kihon",title:"管理組合会計の基本を理事が確認するポイント",cat:"理事・基本"},
-  {slug:"40_kanrikumiai-hoken-minaoshi",title:"管理組合の保険を見直すときの確認ポイント",cat:"理事・基本"},
-  {slug:"41_kanrikumiai-kaikei-kensa",title:"管理組合の会計監査の進め方",cat:"理事・基本"},
-  {slug:"42_daikibo-shuzen-gyosha-erabi",title:"大規模修繕業者の選び方",cat:"大規模修繕"},
-  {slug:"43_kanrikumiai-hoken-shurui",title:"管理組合の保険の種類一覧",cat:"理事・基本"},
-  {slug:"44_shuzen-tsumitate-keisan",title:"修繕積立金の計算方法を一般論で確認する",cat:"管理費・積立金"},
-  {slug:"45_kanrikumiai-riji-gimu",title:"管理組合の理事の義務と責任",cat:"理事・基本"},
-  {slug:"46_mansion-kanri-kiyaku-kaisei-tetsuzuki",title:"マンション管理規約改正の手順",cat:"規約・法律"},
-  {slug:"47_kanrisha-henkou-shippai-jirei",title:"管理会社変更で失敗しやすい一般事例",cat:"管理会社"},
-  {slug:"48_kanrikumiai-sokai-kettei-toriken",title:"管理組合総会の決議取消に関する一般知識",cat:"総会・議事録"},
-  {slug:"49_jishukanri-meriotto-demeritto",title:"自主管理のメリット・デメリット",cat:"管理会社"},
-  {slug:"50_kanrikumiai-riji-report-kakikata",title:"管理組合の理事会報告書の書き方",cat:"理事・基本"},
-  {slug:"51_kanrihi-ageru-setsumeikaikata",title:"管理費の値上げを総会で説明する方法",cat:"管理費・積立金"},
-  {slug:"52_kanrikumiai-yosan-tsukurikata",title:"管理組合の予算の作り方",cat:"理事・基本"},
-  {slug:"53_kanrikumiai-hikitstsugi-hoho",title:"管理組合役員の引き継ぎ方法",cat:"理事・基本"},
-  {slug:"54_mansion-kanrinin-gyomu-naiyou",title:"マンション管理員の業務内容と役割",cat:"管理会社"},
-  {slug:"55_kyoyubuhin-shuzen-tetsuzuki",title:"マンション共用部分の修繕手順",cat:"大規模修繕"},
-  {slug:"56_gaiheki-tosou-hiyou-meyasu",title:"マンション外壁塗装の費用目安",cat:"大規模修繕"},
-  {slug:"57_kanrikumiai-kinkyushuzen-taiou",title:"管理組合の緊急修繕対応手順",cat:"大規模修繕"},
-  {slug:"58_kanrikumiai-IT-denshi-vote",title:"管理組合のIT化と電子投票",cat:"総会・議事録"},
-  {slug:"59_kanrikumiai-shiyo-hokokusho-kakikata",title:"管理組合の収支報告書の書き方と見方",cat:"理事・基本"},
-  {slug:"60_mansion-kanrikumiai-jokyo-kakunin",title:"マンション購入前に管理組合の状況を確認する方法",cat:"管理会社"},
-  {slug:"61_giketsken-koshi-sho-kakikata",title:"管理組合の議決権行使書の書き方",cat:"総会・議事録"},
-  {slug:"62_kanrikumiai-riji-jitai-hoho",title:"マンション理事を辞退したいときの断り方",cat:"理事・基本"},
-  {slug:"63_choki-shuzenkeikaku-tsukurikata",title:"管理組合で長期修繕計画を自主作成する流れ",cat:"大規模修繕"},
-  {slug:"64_kyoyuro-shuzen-tetsuzuki",title:"マンション共用廊下を修繕するときの手順",cat:"大規模修繕"},
-  {slug:"65_rijijai-teisokusuu-kakunin",title:"管理組合理事会の定足数を確認する方法",cat:"総会・議事録"},
-  {slug:"66_kanrihi-taino-kyosei-taiou",title:"マンション管理費滞納への強制徴収を考える前に",cat:"トラブル"},
-  {slug:"67_senyu-rousu-kanrikumiai-taiou",title:"マンション専有部の漏水に管理組合はどう対応するか",cat:"トラブル"},
-  {slug:"68_kyoyu-meigi-kanrikumiai",title:"マンション共有名義の議決権はどう扱うか",cat:"規約・法律"},
-  {slug:"69_kanrikumiai-peperuresu-denshi",title:"管理組合のペーパーレス化と電子化の進め方",cat:"理事・基本"},
-  {slug:"70_mansion-tatekae-sanpi-tetsuzuki",title:"マンション建替えの賛否と管理組合の決議",cat:"規約・法律"},
-  {slug:"kanrikumiai-kanji-yakuwari",title:"管理組合の監事の役割と仕事内容｜理事とは違う確認担当の基本",cat:"理事・基本"},
-  {slug:"kanri-itaku-keiyaku-minaoshi",title:"管理委託契約を更新するときの見直しポイント｜管理会社任せにしない確認手順",cat:"管理会社"},
-  {slug:"rinji-sokai-shoushuu-tetsuzuki",title:"管理組合の臨時総会を招集する手順｜通常総会との違いと準備",cat:"総会・議事録"},
-  {slug:"shuzen-tsumitate-ageru-tetsuzuki",title:"修繕積立金を値上げするときの手順｜住民説明で整理するポイント",cat:"管理費・積立金"},
-  {slug:"mansion-souon-trouble-taiou",title:"マンション騒音トラブルへの管理組合の対応｜感情的にしない初動整理",cat:"トラブル"},
-  {slug:"mudan-chusha-taiou-kanrikumiai",title:"マンションの無断駐車に管理組合が対応する方法｜初動と再発防止",cat:"トラブル"},
-  {slug:"minpaku-kinshi-kiyaku-hoho",title:"マンションで民泊を禁止する規約化の進め方｜管理組合で確認する手順",cat:"規約・法律"},
-  {slug:"senyu-reform-shinsei-tetsuzuki",title:"マンション専有部リフォームの申請手順｜管理組合で確認するポイント",cat:"規約・法律"},
-  {slug:"kanrikumiai-yosan-tsukurikata",title:"管理組合の予算の作り方｜会計資料をもとに理事会で整理する手順",cat:"理事・基本"},
-  {slug:"kanrisha-henkou-tetsuzuki-nagare",title:"管理会社変更の手続きと流れ｜理事会が最初に整理すること",cat:"管理会社"},
-  {slug:"kanrikumiai-gimu-futan-warikomi",title:"管理組合の義務と負担を区分所有者で分ける考え方｜理事が確認する基本",cat:"理事・基本"},
-  {slug:"sokai-teisokusuu-fusoku-taiou",title:"総会の定足数が不足したときの対応｜管理組合が事前に確認すること",cat:"総会・議事録"},
-  {slug:"kanrihi-minaoshi-neage-kimarikata",title:"管理費を見直し値上げが決まるまでの流れ｜理事会で整理するポイント",cat:"管理費・積立金"},
-  {slug:"mansion-elevator-hoshuu-tetsuzuki",title:"マンションのエレベーター保守と修繕の手順｜管理組合が確認するポイント",cat:"設備・修繕"},
-  {slug:"kanrikumiai-riji-kai-gijiroku-kokai",title:"管理組合の理事会議事録を公開するときの確認事項",cat:"理事・基本"},
-  {slug:"mansion-kabe-kiretsu-taiou",title:"マンションの外壁ひび割れに管理組合が対応する手順",cat:"設備・修繕"},
-  {slug:"kanrikumiai-kinkyu-shuzen-shikin",title:"管理組合の緊急修繕費用をどう手当てするか｜積立金不足時の整理",cat:"管理費・積立金"},
-  {slug:"kanri-itaku-keiyaku-kaijo-hoho",title:"管理委託契約を解除する方法｜管理組合が確認する手順と注意点",cat:"管理会社"},
-  {slug:"sokai-ian-tsuki-gian-tsukurikata",title:"管理組合総会の委任付き議案の作り方｜理事会で確認するポイント",cat:"総会・議事録"},
-  {slug:"mansion-jishin-taiou-kanrikumiai",title:"マンションの地震対応で管理組合が確認すること｜初動と記録の整理",cat:"設備・修繕"},
-  {slug:"kanrikumiai-riji-hoshu-umu",title:"管理組合の理事報酬はありかなしか｜判断前に整理する確認事項",cat:"理事・基本"},
-  {slug:"sokai-iinjo-tsuuchi-kakikata",title:"総会の委任状通知の書き方｜管理組合が整理するポイント",cat:"総会・議事録"},
-  {slug:"kanrikumiai-kaikei-kansa-jissen",title:"管理組合の会計監査を実践する手順｜確認項目と進め方",cat:"理事・基本"},
-  {slug:"daikibo-shuzen-jizen-chosa-naiyou",title:"大規模修繕の事前調査でやること｜管理組合が確認する内容",cat:"大規模修繕"},
-  {slug:"kanrikumiai-kiyaku-ihansha-taiou",title:"管理規約違反者への対応手順｜管理組合が取る初動と流れ",cat:"規約・法律"},
-  {slug:"kanrikumiai-jishukanri-gaisha-hikaku",title:"自主管理と管理会社委託の比較｜管理組合が選ぶときの判断基準",cat:"管理会社"},
-  {slug:"kanrikumiai-IT-sokai-junbi",title:"IT総会の準備でやること｜管理組合が整理する手順と注意点",cat:"総会・議事録"},
-  {slug:"mansion-ryokan-kinshi-kanrikumiai",title:"マンションで旅館業を禁止する管理組合の対応｜規約と手順を整理",cat:"規約・法律"},
-  {slug:"kanrikumiai-hojinka-tetsuzuki-flow",title:"管理組合の法人化手続きの流れ｜検討から登記まで整理",cat:"規約・法律"},
-  {slug:"kanrikumiai-100hon-mokuji",title:"管理組合の教科書 全100記事まとめ｜テーマ別目次と使い方",cat:"理事・基本"},
   {slug:"kanrihi-kouzafurikae-settei",title:"管理費の口座振替設定方法｜手順と注意点",cat:"管理費・積立金"},
   {slug:"kanrihi-kouzafurikae-henkou",title:"管理費の口座振替変更手続き｜引越し・口座変更の進め方",cat:"管理費・積立金"},
   {slug:"chushajo-gaibu-kashidashi-kanrikumiai",title:"駐車場の外部貸出｜管理組合の収益化と注意点",cat:"管理費・積立金"},
@@ -285,7 +192,7 @@ const ARTICLES = [
   {slug:"kanrikumiai-tsuchou-inkan-bunri",title:"管理組合の通帳と印鑑の分離保管｜不正防止の実務",cat:"理事・基本"},
   {slug:"kanrikumiai-shorui-hozon-kikan",title:"管理組合の書類・帳簿の保存期間｜法定義務と実務対応",cat:"理事・基本"},
   {slug:"elevator-houshuu-keiyaku-erabikata",title:"エレベーター保守契約の選び方と費用比較｜管理組合の判断ポイント",cat:"大規模修繕"},
-  {slug:"kanrikumiai-line-sns-renkaku",title:"管理組合のLINE・SNS活用｜住民連絡への導入ポイント",cat:"理事・基本"},
+  {slug:"kanrikumiai-line-sns-renkaku",title:"管理組合のLINE・SNS活用｜住民連絡への導入ポイント",cat:"理事・基本"}
 ];
 
 const CAT_ICONS = {
