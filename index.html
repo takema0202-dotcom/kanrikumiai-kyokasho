@@ -114,6 +114,7 @@ footer a{color:#999}
     <button class="filter-btn" data-cat="理事・基本">📋 理事・基本</button>
     <button class="filter-btn" data-cat="管理会社">🏢 管理会社</button>
     <button class="filter-btn" data-cat="総会・議事録">📝 総会・議事録</button>
+    <button class="filter-btn" data-cat="会計・費用負担">💰 会計・費用負担</button>
     <button class="filter-btn" data-cat="管理費・積立金">💰 管理費・積立金</button>
     <button class="filter-btn" data-cat="大規模修繕">🔨 大規模修繕</button>
     <button class="filter-btn" data-cat="設備・修繕">🛠️ 設備・修繕</button>
@@ -179,6 +180,26 @@ const ARTICLES = [
   {slug:"163_shuzen-tsumitatekin-fusoku-taisho",title:"修繕積立金が足りないときの対処",cat:"管理費・積立金"},
   {slug:"161_daikibo-shuzen-bousui-mitsumori",title:"大規模修繕 防水工事の見積もりの取り方",cat:"大規模修繕"},
   {slug:"162_daikibo-shuzen-gyousha-sentei",title:"マンション大規模修繕 業者選定の進め方",cat:"大規模修繕"},
+  {slug:"160_kanrikumiai-keiyaku-hiyou-check",title:"管理委託契約の費用チェックポイント",cat:"管理会社"},
+  {slug:"159_kanrihi-mitsumori-mise-hyouji",title:"管理費の見積書の見方",cat:"会計・費用負担"},
+  {slug:"158_kanrikumiai-hiyou-toumei-ka",title:"管理費の透明化・情報公開",cat:"会計・費用負担"},
+  {slug:"157_kanrikumiai-reserve-fund-riyou",title:"修繕積立金の使途ルール",cat:"会計・費用負担"},
+  {slug:"156_kanrikumiai-gaibu-kansa-naiyou",title:"管理組合の外部監査の内容",cat:"会計・費用負担"},
+  {slug:"155_kanrikumiai-zeimu-shinkoku-kihon",title:"管理組合の税務申告の基本",cat:"会計・費用負担"},
+  {slug:"154_kanrikumiai-kariire-kihon",title:"管理組合の借入れの基本知識",cat:"会計・費用負担"},
+  {slug:"153_kanrikumiai-kaikei-software-kihon",title:"管理組合の会計ソフトの基本",cat:"会計・費用負担"},
+  {slug:"152_kyoyubu-denki-suido-hiyou-futan",title:"共用部の電気・水道費用の負担",cat:"会計・費用負担"},
+  {slug:"151_kanrikumiai-tsuchou-funsoui-taiou",title:"管理組合の通帳・印鑑の管理方法",cat:"会計・費用負担"},
+  {slug:"150_kanrihi-neage-giketsu-tetsuzuki",title:"管理費値上げの議決手続き",cat:"会計・費用負担"},
+  {slug:"149_kanrikumiai-yosan-sakusei-nagare",title:"管理組合の予算作成の流れ",cat:"会計・費用負担"},
+  {slug:"148_kanrikumiai-kaikeikansa-junbi",title:"管理組合の会計監査の準備",cat:"会計・費用負担"},
+  {slug:"147_kanrikumiai-hoken-seikyu-tetsuzuki",title:"管理組合の保険請求手続き",cat:"会計・費用負担"},
+  {slug:"146_daikibo-shuzen-hiyou-futan-wake",title:"大規模修繕の費用負担の分け方",cat:"大規模修繕"},
+  {slug:"145_kanrihi-taino-henkan-hoho",title:"管理費滞納分の回収方法",cat:"会計・費用負担"},
+  {slug:"144_kanrikumiai-yokin-kanri-kihon",title:"管理組合の預金管理の基本",cat:"会計・費用負担"},
+  {slug:"143_shuzen-tsumitate-fusoku-taiou",title:"修繕積立金が不足したときの対応",cat:"会計・費用負担"},
+  {slug:"142_kanrihi-mitsumori-hikaku-pointo",title:"管理費見直し・相見積もりのポイント",cat:"会計・費用負担"},
+  {slug:"141_kanrikumiai-zaimu-houkoku-kakikata",title:"管理組合の財務報告書の書き方",cat:"会計・費用負担"},
   {slug:"kanrikumiai-riji-saishoni",title:"管理組合の理事になったら最初にやること｜初回理事会までの実務チェックリスト",cat:"理事・基本"},
   {slug:"kanrikumiai-richocho-yakuwari",title:"管理組合の理事長の役割を初心者向けに解説｜抱え込まない進め方",cat:"理事・基本"},
   {slug:"shuzen-tsumitate-neage-setsumei",title:"修繕積立金の値上げを説明する方法｜理事会が準備する資料と伝え方",cat:"管理費・積立金"},
@@ -285,7 +306,7 @@ const ARTICLES = [
 
 const CAT_ICONS = {
   "理事・基本":"📋","管理会社":"🏢","総会・議事録":"📝",
-  "管理費・積立金":"💰","大規模修繕":"🔨","設備・修繕":"🛠️","トラブル":"⚠️","規約・法律":"⚖️"
+  "会計・費用負担":"💰","管理費・積立金":"💰","大規模修繕":"🔨","設備・修繕":"🛠️","トラブル":"⚠️","規約・法律":"⚖️"
 };
 
 document.addEventListener('DOMContentLoaded', function() {
