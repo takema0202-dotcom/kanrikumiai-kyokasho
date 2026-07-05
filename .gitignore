@@ -3,3 +3,10 @@ AGENTS.md
 ホームページ作業_必読コンテキスト.md
 20260619_120点改善指示書.md
 apply-improvements.ps1
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
