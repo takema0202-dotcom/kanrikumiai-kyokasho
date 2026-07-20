@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"修繕積立金が足りないときの対処","description":"修繕積立金が不足しそうな管理組合向けに、不足が起きる理由、理事会で整理する選択肢、工事費を見直す視点を解説します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/163_shuzen-tsumitatekin-fusoku-taisho.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"修繕積立金が足りないときの対処","description":"修繕積立金が不足しそうな管理組合向けに、不足が起きる理由、理事会で整理する選択肢、工事費を見直す視点を解説します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/163_shuzen-tsumitatekin-fusoku-taisho.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"管理費・積立金","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"修繕積立金が足りないときの対処","item":"https://kanrikumiai-kyokasho.com/docs/163_shuzen-tsumitatekin-fusoku-taisho.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -95,6 +120,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>住民説明で押さえること</h2>
     <p>修繕積立金の不足は、住民の家計に直結するため、結論だけを示すと反発が起きやすいテーマです。説明では、不足が分かった経緯、確認した資料、比較した選択肢、採用しなかった案の理由、今後のスケジュールを順番に示します。</p>
     <p>理事会が先に合意しておきたいのは、「何を今決めるのか」と「何を次回までに確認するのか」です。すべてを一度に決めようとせず、資料整理、見積比較、資金案、総会議案の順に分けると、議論が進めやすくなります。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 一時金徴収と値上げ、どちらを先に検討すればよいですか。</strong></p>
+    <p>A: 一時金は工事の直前でも対応できる速さがある一方、値上げは効果が出るまで時間がかかるものの将来の不足を継続的に改善できます。目先の工事資金だけを埋めたいのか、今後複数回の大規模修繕を見据えた体質改善までしたいのかを理事会で整理すると、選択肢を絞り込みやすくなります。直近の不足には一時金や借入れで対応しつつ、値上げは次期の長期修繕計画改定にあわせて検討する、という段階的な進め方をとる管理組合が多くあります。</p>
+    <p><strong>Q: 秋(9〜11月)の着工を予定している場合、資金不足への対応はいつまでに固める必要がありますか。</strong></p>
+    <p>A: 一時金徴収や値上げは総会決議が必要なため、総会招集通知の発送、住民説明会、理事会での資料確定という手順に数ヶ月かかります。年1回総会の管理組合では、6〜8月中に資金案の理事会合意と住民説明を終えておかないと、秋の着工スケジュールに間に合わなくなる可能性があります。借入れを検討する場合も、金融機関の審査期間を見込んで早めに動く必要があります。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
