@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"大規模修繕 防水工事の見積もりの取り方","description":"マンション大規模修繕で防水工事の見積もりを取る前に、劣化サイン、見積条件、比較項目、住民説明の進め方を整理します。","datePublished":"2026-07-02","dateModified":"2026-07-02","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/161_daikibo-shuzen-bousui-mitsumori.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"大規模修繕 防水工事の見積もりの取り方","description":"マンション大規模修繕で防水工事の見積もりを取る前に、劣化サイン、見積条件、比較項目、住民説明の進め方を整理します。","datePublished":"2026-07-02","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/161_daikibo-shuzen-bousui-mitsumori.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"大規模修繕","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"大規模修繕 防水工事の見積もりの取り方","item":"https://kanrikumiai-kyokasho.com/docs/161_daikibo-shuzen-bousui-mitsumori.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -104,6 +129,11 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>理事会でのまとめ方</h2>
     <p>防水工事の見積もりは、専門用語が多く、理事だけで比較すると判断がぶれやすい分野です。まずは対象範囲、劣化状況、見積条件、比較項目を紙に落とし込み、管理会社や専門業者に説明を求める形にしましょう。複数社の見積もりを取る場合も、同じ条件で依頼することが比較の出発点です。</p>
 
+    <h2>よくある質問</h2>
+    <p><strong>Q: 見積書に「防水工事一式」としか書かれていない場合、どうすればよいですか。</strong></p>
+    <p>A: 「一式」表記だけの見積もりは、施工面積や工法の内訳が確認できず、あとから追加費用が発生しても妥当性を判断しにくくなります。契約前に、対象範囲ごとの数量、工法名、下地補修や撤去・清掃の工程が個別に書かれた内訳書の提出を依頼し、他社の見積もりと同じ項目に並べ替えて比較できる状態にしておくことをおすすめします。</p>
+    <p><strong>Q: 梅雨や台風の多い6〜8月に防水工事の依頼・契約を進めても問題ありませんか。</strong></p>
+    <p>A: 防水工事自体は施工可能な晴天日を選んで進められますが、現地調査や足場計画は天候の影響で日程が動きやすい時期です。むしろ、この時期は業者選定・見積もり比較・住民説明の準備期間にあて、秋の乾燥した時期の着工を目指して6〜8月中に契約まで進めておくと、工程が天候に左右されにくくなります。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
