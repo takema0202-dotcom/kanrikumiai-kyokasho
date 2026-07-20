@@ -18,7 +18,32 @@
     footer { margin-top: 3rem; border-top: 1px solid #d0d7de; padding-top: 1rem; color: #666; font-size: .9rem; }
     a { color:#1a56db; }
   </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645161993354680" crossorigin="anonymous"></script>
+<script>
+(function(){
+  var h2s = document.querySelectorAll('h2');
+  var faqH2 = null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
+</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645161993354680" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1>大規模修繕の施工会社との契約で確認すること</h1>
@@ -34,6 +59,12 @@
   <p>大規模修繕の施工会社との契約で確認することを住民へ説明する場合は、専門用語だけで伝えず、なぜ今このテーマを扱うのか、住民にどのような影響があるのか、今後の予定はどうなるのかを順に示します。反対意見や不安が出ることを前提に、質問を受ける窓口、回答時期、資料の確認方法を用意しておくと混乱を抑えやすくなります。説明文は、結論、理由、今後の流れ、問い合わせ先の順で書くと読みやすくなります。法的な確定判断や税務判断が必要な内容は、管理組合だけで断定せず、確認先を明示する形にします。</p>
   <h2>実務で残す記録</h2>
   <p>契約書、見積書、仕様書、変更契約の記録は一式にまとめ、工事完了後も一定期間保管します。追加工事の承認経緯や金額変更の理由を残しておくと、次期理事会が同じ内容を確認し直す手間を減らせます。</p>
+
+  <h2>よくある質問</h2>
+  <p><strong>Q: 契約書に追加工事の単価が明記されていない場合、どうすればよいですか。</strong></p>
+  <p>A: 追加工事が発生した際の単価や算定方法が契約書に無いと、着工後の金額交渉で管理組合が不利になりやすくなります。契約前の段階で、追加工事が生じた場合の見積もり提出方法・承認手続き・単価の根拠を書面で確認し、可能であれば契約書または覚書に明記してもらうことをおすすめします。</p>
+  <p><strong>Q: 9〜11月頃の着工を予定している場合、契約手続きはいつ頃までに終える必要がありますか。</strong></p>
+  <p>A: 見積もり比較、住民説明、総会決議を経てから契約となるため、着工の2〜3ヶ月前には契約を締結しておきたいところです。9〜11月の着工を検討している場合は、6〜8月のうちに施工会社選定・契約条件の確認まで進めておくと、決議や住民説明の時間を確保しやすくなります。</p>
 
   <h2>まとめ</h2>
   <p>大規模修繕の施工会社との契約で確認することは、単独の担当者だけで抱えず、理事会で前提をそろえて進めることが重要です。資料、判断範囲、住民への影響を分けて整理すると、次の手順が見えやすくなります。</p>
