@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部への宅配ボックス後付け導入ガイド","description":"マンション共用部に宅配ボックスを後付け導入するときのメリット、設置スペース、電源、容量、総会承認、費用負担の整理を解説します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/166_takuhai-box-kyoyoubu-donyu.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部への宅配ボックス後付け導入ガイド","description":"マンション共用部に宅配ボックスを後付け導入するときのメリット、設置スペース、電源、容量、総会承認、費用負担の整理を解説します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/166_takuhai-box-kyoyoubu-donyu.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"設備・修繕","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"マンション共用部への宅配ボックス後付け導入ガイド","item":"https://kanrikumiai-kyokasho.com/docs/166_takuhai-box-kyoyoubu-donyu.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -97,6 +122,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>導入後の運用ルール</h2>
     <p>宅配ボックスは設置して終わりではなく、運用ルールを作ることで使いやすくなります。利用対象者、荷物の保管期間、放置荷物への対応、故障時の連絡先、暗証番号やカードの管理、管理員が対応する範囲を決めておきます。</p>
     <p>高齢住民が多いマンションでは、操作方法の掲示や簡単な説明資料があると利用しやすくなります。新しい設備に不安を感じる住民もいるため、設置前後に写真付きで案内し、問い合わせ先を明確にしておくと混乱を抑えられます。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 世帯数に対してボックス数が不足した場合、後から増設できますか。それとも最初にある程度余裕を持って導入すべきですか。</strong></p>
+    <p>A: 電源工事や基礎の追加が必要なタイプは、後からの増設で床面や配線ルートの制約に直面しやすく、初回設置時よりも割高になる場合があります。一方で、最初から余裕を持ちすぎると設置スペースを圧迫し、通行動線や消防設備の確認で総会承認が通りにくくなることもあります。理事会では、現在の再配達件数や住民アンケートの結果をもとに必要数を見積もったうえで、増設余地のある設置場所を確保できるかを業者に確認しておくと、将来の変更に対応しやすくなります。</p>
+    <p><strong>Q: 大型荷物や生鮮食品が宅配ボックスに入らない場合、住民からの苦情にどう対応すればよいですか。</strong></p>
+    <p>A: 宅配ボックスはすべての荷物に対応できる設備ではないため、導入時点で「対応できない荷物の範囲」を総会資料や掲示で明確に説明しておくことが苦情予防につながります。実際に対応しきれない荷物が出た場合は、置き配や管理員預かりなど既存の受け取り方法と併用する運用であることを改めて周知し、宅配ボックスを万能な解決策として説明しない姿勢が、後々の認識のずれを防ぎます。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
