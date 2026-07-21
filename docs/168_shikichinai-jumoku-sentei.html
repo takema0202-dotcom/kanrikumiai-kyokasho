@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"マンション敷地内の樹木・植栽管理、剪定業者への依頼ポイント","description":"マンション敷地内の樹木や植栽管理で、剪定が必要になるタイミング、業者選定、見積比較、総会承認、費用負担の考え方を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/168_shikichinai-jumoku-sentei.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"マンション敷地内の樹木・植栽管理、剪定業者への依頼ポイント","description":"マンション敷地内の樹木や植栽管理で、剪定が必要になるタイミング、業者選定、見積比較、総会承認、費用負担の考え方を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/168_shikichinai-jumoku-sentei.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"設備・修繕","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"マンション敷地内の樹木・植栽管理、剪定業者への依頼ポイント","item":"https://kanrikumiai-kyokasho.com/docs/168_shikichinai-jumoku-sentei.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -97,6 +122,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>実施後の記録と次回への引き継ぎ</h2>
     <p>剪定後は、作業日、業者名、対象樹木、作業前後の写真、請求書、見積書、住民周知文を保管します。次回の理事会や次期理事が同じ判断を繰り返さなくて済むよう、剪定周期や注意点を運営記録に残しておくと管理が安定します。</p>
     <p>毎年同じ時期に相談が出る場合は、単発対応ではなく年間植栽管理として整理する方法もあります。作業頻度を決めておくと、緊急対応が減り、予算も組みやすくなります。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 夏場と冬場のどちらで剪定を依頼すべきですか。予算の都合で年1回しか実施できない場合の判断基準を教えてください。</strong></p>
+    <p>A: 樹種や目的によって適期は異なりますが、通行の見通しや外灯・防犯カメラの視界確保、道路や隣地への越境といった安全面の課題は、枝葉が伸びる夏場に顕在化しやすい傾向があります。年1回しか予算が取れない場合は、まず安全面の緊急度が高い箇所を優先し、花木の開花に影響する剪定時期など景観面の要望は次回以降に回すという優先順位の付け方が、理事会説明としては現実的です。最終的な適期の判断は樹種ごとに異なるため、業者への現地確認時にあわせて相談することをおすすめします。</p>
+    <p><strong>Q: 専用庭に面した樹木の剪定費用は、専用使用部分の区分所有者が負担するのですか。</strong></p>
+    <p>A: 専用庭内に植えられた樹木であっても、敷地全体の植栽計画の一部として管理組合が共用部分の扱いで管理しているケースと、専用使用権者の負担で管理する取り決めになっているケースの両方があり、一律には決まりません。管理規約や使用細則、過去の総会決議に負担区分の記載がないか確認したうえで、記載が不明確な場合は理事会で解釈を協議し、必要であれば総会で取り扱いを明文化しておくと、次回以降の判断がぶれにくくなります。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
