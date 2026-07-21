@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部で蜂の巣を見つけたときの対応","description":"マンション共用廊下、バルコニー周辺、植栽内で蜂の巣を見つけたときの初動、住民周知、専門業者依頼、再発防止の考え方を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/169_kyoyoubu-hachi-taiou.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部で蜂の巣を見つけたときの対応","description":"マンション共用廊下、バルコニー周辺、植栽内で蜂の巣を見つけたときの初動、住民周知、専門業者依頼、再発防止の考え方を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/169_kyoyoubu-hachi-taiou.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"トラブル","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"マンション共用部で蜂の巣を見つけたときの対応","item":"https://kanrikumiai-kyokasho.com/docs/169_kyoyoubu-hachi-taiou.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -98,6 +123,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>再発防止の一般的な考え方</h2>
     <p>駆除後は、巣ができた場所、周辺の植栽、軒下、配管スペース、外灯周辺などを確認します。植栽が密集している、見通しが悪い、清掃時に確認しにくい場所がある場合は、剪定や点検ルートの見直しを検討します。</p>
     <p>毎年同じ時期に相談が出る場合は、春から夏にかけて管理会社や清掃担当に点検してもらうなど、季節ごとのチェック項目に加える方法があります。完全な再発防止を約束するものではありませんが、早期発見の仕組みを作ることで、緊急対応の負担を減らしやすくなります。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 巣が小さく、蜂の出入りもあまり多くないように見えます。それでもすぐに業者へ相談したほうがよいですか。</strong></p>
+    <p>A: 巣の大きさだけで安全性を判断するのは避けたほうが安全です。特に夏場は数週間で巣が急速に大きくなることがあり、発見時点で小さく見えても、種類によっては短期間で危険度が上がる場合があります。理事会や管理員が独自に様子見を続けるより、早い段階で管理会社や専門業者に写真と場所を共有し、駆除が必要かどうかの判断自体を専門家に委ねる方が、住民の安全確保という点では現実的です。</p>
+    <p><strong>Q: 駆除費用は管理組合が負担するのですか。専有部分のバルコニー内に巣がある場合はどうなりますか。</strong></p>
+    <p>A: 共用廊下や植栽、外灯周辺など共用部分にある巣は、管理組合の管理費や修繕関連の予算から手配するケースが多く見られます。一方、専有部分であるバルコニー内や室外機周辺にできた巣は、区分所有者側の対応となる場合もあり、扱いはマンションごとの管理規約や過去の運用によって異なります。判断に迷う位置にある場合は、費用負担を決める前に管理会社へ現場の状況を伝え、共用部分・専有部分のどちらの扱いになりそうか確認したうえで進めると、後日の説明がしやすくなります。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
