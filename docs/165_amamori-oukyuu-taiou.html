@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"突然の雨漏り、応急対応と業者手配の流れ","description":"マンションで突然の雨漏りが起きたときの初動対応、写真記録、管理会社や管理組合への連絡、業者手配の流れを一般情報として整理します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/165_amamori-oukyuu-taiou.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"突然の雨漏り、応急対応と業者手配の流れ","description":"マンションで突然の雨漏りが起きたときの初動対応、写真記録、管理会社や管理組合への連絡、業者手配の流れを一般情報として整理します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/165_amamori-oukyuu-taiou.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"大規模修繕","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"突然の雨漏り、応急対応と業者手配の流れ","item":"https://kanrikumiai-kyokasho.com/docs/165_amamori-oukyuu-taiou.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -94,6 +119,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>大規模修繕へのつなぎ方</h2>
     <p>同じ場所で雨漏りが繰り返される場合や、屋上防水・外壁・シーリングの劣化が広範囲に見られる場合は、単発修理だけでなく大規模修繕との関係も確認します。直す範囲を小さく抑えすぎると、近い時期に再調査や再足場が必要になることがあります。</p>
     <p>理事会では、今回の雨漏り対応を一件処理で終わらせず、修繕履歴として残します。発生日、原因、応急処置、恒久対応、費用、今後の注意点を一覧化しておくと、次回の長期修繕計画見直しや大規模修繕の検討資料になります。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 夜間や休日に雨漏りが起きました。専有部分か共用部分か分からない段階でも業者を呼んでよいですか。</strong></p>
+    <p>A: 被害が進行している状況では、原因の切り分けを待たずに応急対応を優先するのが一般的です。多くのマンションでは、緊急時に理事長判断や管理会社の緊急窓口で一時対応を進められる運用になっています。管理規約や緊急対応マニュアルに夜間休日の連絡フローが定められていないか確認し、なければ管理会社にその場での対応可否を確認します。応急処置の内容と費用の記録を残しておけば、原因判明後の精算や理事会報告がしやすくなります。</p>
+    <p><strong>Q: 応急対応にかかった費用は、原因がはっきりする前に管理組合が立て替えてよいのでしょうか。</strong></p>
+    <p>A: 緊急の被害拡大防止にかかる費用は、後日の原因調査で専有部分の設備が原因と判明した場合でも、いったん管理組合や管理会社が立て替えて対応するケースがあります。ただし、恒久的な負担区分は管理規約や過去の総会決議、調査結果によって扱いが変わるため、応急対応の時点で「誰が最終的に負担するか」を断定しないことが大切です。作業内容・金額・原因調査の結果を記録に残し、確定後に理事会で精算方法を確認する流れが一般的です。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
