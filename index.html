@@ -111,7 +111,6 @@ footer a{color:#999}
 <div class="filter-wrap">
   <div class="filter-btns" id="filterBtns">
     <button class="filter-btn active" data-cat="all">すべて</button>
-    <button class="filter-btn" data-cat="大家・オーナー実務">🏠 大家・オーナー実務</button>
     <button class="filter-btn" data-cat="理事・基本">📋 理事・基本</button>
     <button class="filter-btn" data-cat="管理会社">🏢 管理会社</button>
     <button class="filter-btn" data-cat="総会・議事録">📝 総会・議事録</button>
@@ -173,8 +172,6 @@ footer a{color:#999}
 
 <script>
 const ARTICLES = [
-  {slug:"kojinooona-gaiheki-bousui-gyousha-erabikata",title:"アパート・戸建て賃貸の外壁・屋根修繕｜大家が一人で決める業者選びの注意点",cat:"大家・オーナー実務"},
-  {slug:"kojinooona-chintai-kasai-hoken-minaoshi",title:"賃貸物件オーナーの火災保険見直し｜空室補償・借家人賠償責任保険との関係を整理する",cat:"大家・オーナー実務"},
   {slug:"hub-rijikai-guide",title:"理事会運営 完全ガイド｜理事になったら最初に読むページ",cat:"理事・基本"},
   {slug:"hub-soukai-guide",title:"マンション管理組合の総会 完全ガイド｜準備から議事録まで順番にわかる",cat:"総会・議事録"},
   {slug:"hub-daikibo-shuzen-guide",title:"大規模修繕 完全ガイド｜検討開始から工事完了まで順番にわかる",cat:"大規模修繕"},
@@ -379,7 +376,7 @@ const ARTICLES = [
 ];
 
 const CAT_ICONS = {
-  "大家・オーナー実務":"🏠","理事・基本":"📋","管理会社":"🏢","総会・議事録":"📝",
+  "理事・基本":"📋","管理会社":"🏢","総会・議事録":"📝",
   "会計・費用負担":"💰","管理費・積立金":"💰","大規模修繕":"🔨","設備・修繕":"🛠️","トラブル":"⚠️","規約・法律":"⚖️"
 };
 
@@ -434,7 +431,7 @@ function render() {
   });
 
   // カテゴリ順序を固定
-  const catOrder = ["大家・オーナー実務","理事・基本","管理会社","総会・議事録","管理費・積立金","大規模修繕","設備・修繕","トラブル","規約・法律"];
+  const catOrder = ["理事・基本","管理会社","総会・議事録","管理費・積立金","大規模修繕","設備・修繕","トラブル","規約・法律"];
   const orderedCats = currentCat === 'all'
     ? catOrder.filter(c => cats[c])
     : [currentCat];
