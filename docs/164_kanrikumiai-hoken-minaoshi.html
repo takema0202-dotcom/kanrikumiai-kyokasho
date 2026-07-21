@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"管理組合保険の見直しポイント","description":"マンション管理組合の保険見直しについて、加入する保険の種類、更新時期、比較項目、理事会での注意点を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/164_kanrikumiai-hoken-minaoshi.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"管理組合保険の見直しポイント","description":"マンション管理組合の保険見直しについて、加入する保険の種類、更新時期、比較項目、理事会での注意点を整理します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/164_kanrikumiai-hoken-minaoshi.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"理事・基本","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"管理組合保険の見直しポイント","item":"https://kanrikumiai-kyokasho.com/docs/164_kanrikumiai-hoken-minaoshi.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -97,6 +122,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>住民説明に使う資料</h2>
     <p>総会や理事会で保険見直しを説明する場合は、専門用語をそのまま並べるより、現在契約、更新案、比較案の違いを表にする方が伝わりやすくなります。資料には、見直しの理由、比較した項目、変更点、変えない点、今後の確認事項を入れます。</p>
     <p>住民から質問が出た場合に備えて、保険証券、約款、見積書、代理店からの説明資料、事故履歴をひとまとめにしておくと、次期理事への引き継ぎにも使えます。判断の根拠を残すことが、保険見直しの実務では重要です。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 更新のたびに保険料が上がっています。まず何を確認すればよいですか。</strong></p>
+    <p>A: 保険料の上昇要因は一つとは限りません。業界全体の料率改定なのか、自マンション固有の事故履歴・築年数の影響なのかを代理店に確認します。証券を並べて、対象範囲や免責金額が前回契約と同じ条件かも見ます。補償内容を変えずに料率だけが上がっている場合と、補償を厚くした結果料金が上がっている場合とでは、住民への説明の仕方が変わります。</p>
+    <p><strong>Q: 築年数が古いマンションで、加入できる保険会社の選択肢が減ってきました。どう対応すればよいですか。</strong></p>
+    <p>A: 築年数が進むと、水漏れ事故のリスクなどを理由に、条件を厳しくしたり契約自体を断る保険会社が出てきます。まずは今の代理店に、他社での引き受け可否や条件変更の余地を確認します。並行して、複数の代理店・保険会社に相見積もりを依頼し、補償範囲を絞ってでも継続加入できる案があるかを比較します。無保険の期間が生じないよう、現契約の満期日から逆算して早めに動くことが重要です。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
