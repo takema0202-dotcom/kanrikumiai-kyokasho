@@ -44,10 +44,35 @@ footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--mute
 footer a { color:var(--muted); margin-right:14px; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部の防犯カメラ、後付け設置を検討する際のポイント","description":"マンション共用部に防犯カメラを後付け設置するときの検討手順、設置箇所、録画データ管理、業者選定、総会承認までの流れを解説します。","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/167_bouhan-camera-kyoyoubu-donyu.html"}
+{"@context":"https://schema.org","@type":"Article","headline":"マンション共用部の防犯カメラ、後付け設置を検討する際のポイント","description":"マンション共用部に防犯カメラを後付け設置するときの検討手順、設置箇所、録画データ管理、業者選定、総会承認までの流れを解説します。","datePublished":"2026-07-04","dateModified":"2026-07-21","author":{"@type":"Organization","name":"管理組合の教科書編集部"},"publisher":{"@type":"Organization","name":"管理組合の教科書"},"mainEntityOfPage":"https://kanrikumiai-kyokasho.com/docs/167_bouhan-camera-kyoyoubu-donyu.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://kanrikumiai-kyokasho.com/"},{"@type":"ListItem","position":2,"name":"設備・修繕","item":"https://kanrikumiai-kyokasho.com/#category"},{"@type":"ListItem","position":3,"name":"マンション共用部の防犯カメラ、後付け設置を検討する際のポイント","item":"https://kanrikumiai-kyokasho.com/docs/167_bouhan-camera-kyoyoubu-donyu.html"}]}
+</script>
+<script>
+(function(){
+  var h2s=document.querySelectorAll('h2'); var faqH2=null;
+  for(var i=0;i<h2s.length;i++){if(h2s[i].textContent.indexOf('よくある質問')>=0){faqH2=h2s[i];break;}}
+  if(!faqH2) return;
+  var items=[]; var el=faqH2.nextElementSibling;
+  while(el && el.tagName!=='H2'){
+    if(el.tagName==='P'){
+      var t=el.innerText||el.textContent;
+      var qm=t.match(/^Q[：:]\s*(.+)/); var am=t.match(/^A[：:]\s*([\s\S]+)/);
+      if(qm) items.push({q:qm[1].trim()});
+      else if(am && items.length>0 && !items[items.length-1].a) items[items.length-1].a=am[1].trim();
+    }
+    el=el.nextElementSibling;
+  }
+  if(items.length===0) return;
+  var entities=items.filter(function(i){return i.q&&i.a;}).map(function(i){
+    return '{"@type":"Question","name":'+JSON.stringify(i.q)+',"acceptedAnswer":{"@type":"Answer","text":'+JSON.stringify(i.a)+'}}';
+  });
+  if(entities.length===0) return;
+  var s=document.createElement('script'); s.type='application/ld+json';
+  s.text='{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['+entities.join(',')+']}';
+  document.head.appendChild(s);
+})();
 </script>
 </head>
 <body>
@@ -103,6 +128,12 @@ footer a { color:var(--muted); margin-right:14px; }
     <h2>設置後に残す記録</h2>
     <p>設置後は、契約書、見積書、図面、カメラ位置、録画機器の管理方法、保守連絡先、総会議案書、議事録、住民向け周知文を保管します。次期理事に引き継ぐため、どの資料をどこに保管しているかも一覧化します。</p>
     <p>運用開始後にトラブルが起きた場合は、録画確認を誰が依頼し、誰が確認し、どの範囲で共有したかを記録します。録画データの扱いを曖昧にしないことが、理事会と住民双方の安心につながります。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>Q: 撮影範囲に隣接住戸の玄関ドアや窓が映り込んでしまう場合、設置自体をあきらめるべきですか。</strong></p>
+    <p>A: あきらめる前に、画角の調整、設置高さや向きの変更、マスキング機能付きの機器の利用で映り込みを減らせないか業者に確認します。それでも完全に避けられない場合は、映り込む範囲と目的（共用部の安全確認に限定する等）を総会資料で明示し、該当する住戸には個別に説明の機会を設けることで、後からの苦情や不信感を減らしやすくなります。設置角度の記録写真を残しておくと、後日の問い合わせにも説明しやすくなります。</p>
+    <p><strong>Q: 録画データについて、警察から開示を求められた場合や、住民同士のトラブルで確認を求められた場合、誰がどう判断すればよいですか。</strong></p>
+    <p>A: 事前に運用細則で「誰が開示可否を判断するか」「警察からの正式な照会と、住民個人からの閲覧希望を同じ扱いにしないこと」を決めておくことが重要です。理事長や管理会社担当者など判断者を限定し、開示した日時・相手・範囲・理由を記録に残す運用にしておくと、後から経緯を説明しやすくなります。個別の法的判断が必要な場面では、管理会社や専門家に確認しながら対応する前提で運用ルールを作ります。</p>
 
     <section class="cta">
       <div class="label">[PR] 提携サービスのご案内</div>
